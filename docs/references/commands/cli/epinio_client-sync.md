@@ -1,25 +1,23 @@
 ---
 title: ""
-sidebar_label: "epinio app create"
+sidebar_label: "epinio client-sync"
 ---
-## epinio app create
+## epinio client-sync
 
-Create just the app, without creating a workload
+Downloads a client binary matching the currently logged server
+
+### Synopsis
+
+Synchronizes the epinio client with the server by downloading the matching binary and replacing the current one.
 
 ```
-epinio app create NAME [flags]
+epinio client-sync [flags]
 ```
 
 ### Options
 
 ```
-      --app-chart string      App chart to use for deployment
-  -b, --bind strings          configurations to bind immediately
-  -v, --chart-value strings   chart customization to be used
-  -e, --env strings           environment variables to be used
-  -h, --help                  help for create
-  -i, --instances int32       The number of instances the application should have (default 1)
-  -r, --route strings         Custom route to use for the application (a subdomain of the default domain will be used if this is not set). Can be set multiple times to use multiple routes with the same application.
+  -h, --help   help for client-sync
 ```
 
 ### Options inherited from parent commands
@@ -36,5 +34,5 @@ epinio app create NAME [flags]
 
 ### SEE ALSO
 
-* [epinio app](./epinio_app.md)	 - Epinio application features
+* [epinio](./epinio.md)	 - Epinio cli
 
